@@ -1,0 +1,16 @@
+﻿@model OnlineShopping.Models.Sınıflar.kategori
+@{
+    ViewBag.Title = "kategoriEkle";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<br />
+<h2>Yeni Kategori Sayfası</h2>
+<br />
+<form  method="post" class="from-group">
+    @Html.LabelFor(X=>X.kategoriAd)
+    @Html.TextBoxFor(X => X.kategoriAd, new {@class="form-" +
+    "control" })
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>
+
